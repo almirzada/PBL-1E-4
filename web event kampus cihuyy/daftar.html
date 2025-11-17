@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Lomba</title>
+  <link rel="stylesheet" href="style_daftar.css">
+</head>
+<body background="desain latar belakan.png">
+  <div class="container">
+    <h2>Formulir Pendaftaran</h2>
+    <form id="formPendaftaran">
+      <label for="nim">NIM:</label>
+      <input type="text" id="nim" required>
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required>
+
+      <label for="prodi">Prodi:</label>
+      <input type="text" id="prodi" required>
+
+      <label for="email">Nomor WA Aktif</label>
+      <input type="number" id="number" required>
+
+      <label for="lomba">Daftar Perlombaan:</label>
+      <select id="lomba" required>
+        <option value="">-- Pilih Lomba --</option>
+        <option value="Futsal">Futsal</option>
+        <option value="Basket">Basket</option>
+        <option value="Badminton">Badminton Ganda</option>
+      </select>
+
+      <label for="ketua">Nama Ketua/Kapten:</label>
+      <input type="text" id="ketua" required>
+
+      <div id="anggotaContainer"></div>
+
+      <button type="submit">Daftar</button>
+      <button type="button" class="back-button" onclick="history.back()">Kembali</button>
+
+
+    </form>
+  </div>
+
+  <script src="daftar.js"></script>
+</body>
+</html>
